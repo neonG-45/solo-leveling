@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Reveal Password</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="pass"> Enter Password</label>
+            <input type="password" name="pass" id="pass"></p>
+            <input type="checkbox" onclick="check()">Hide and Reveal Password
+           <p> <input type="submit" value="Submit">
+           </p>
+    </form>
+    <script>
+       var x=document.getElementById("pass");
+        function check(){
+            if (x.type==="password") {
+                x.type="text";
+            } else {
+                x.type="password";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">   
+    <p>
+        <label for="pword">PASSWORD</label>
+        <input type="password" name="pword" id="pword">
+    </p>
+    <p>
+        <input type="checkbox" onclick="show()" >click
+    </p>
+    <input type="submit" value="zoom">
+   </form> 
+   <script>
+   let r=document.getElementById("pword");
+    function show(){
+        if (r.type==="password") {
+            r.type="text"
+        } else {
+            r.type="password"
+        }
+    }
+   </script>
+</body>
+</html>
